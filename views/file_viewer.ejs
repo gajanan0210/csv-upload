@@ -1,0 +1,69 @@
+<!-- local css for body -->
+<link rel="stylesheet" type="text/css" href="../css/file_viewer.css">
+<!-- local css for header -->
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+
+
+<!-- header -->
+<div class="nav-bar" style="position: fixed;">
+    <a href="/" class="back-icon">
+        <i class="fa-solid fa-arrow-left" style="color: #0b0b0b;"></i>
+    </a>    
+    <div class="title">
+        CSV Upload
+    </div>
+    <div class="sub-title">
+       <center> Viewer </center>
+    </div>
+    <div class="file-name">
+        <%= fileName %>
+    </div>
+</div>
+
+<!-- search bar -->
+<div class="search-bar">
+    <form id="searchForm">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search data...">
+            
+            <button id="go" class="search-btn">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Search</span>
+              </button>
+            
+            
+        </div>
+    </form>
+    <div>
+        <p id="total-rows">Total Rows: <%=length%></p>
+    </div>
+</div>
+
+<!-- search results -->
+<div>
+    <table>
+        <thead>
+            <tr>
+            <% for(let h of head) { %>
+                <th><%= h %></th>
+            <% } %>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let row of data) { %>
+            <tr>
+                <% for(let key of Object.keys(row)) { %>
+                    <td><%= row[key] %></td>
+                <% } %>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>

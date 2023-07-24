@@ -1,0 +1,143 @@
+
+
+/* Set margin and padding for the body */
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the header text */
+.center-text h1 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    margin-top: 50px; /* Increased top margin for better spacing */
+    color: #5d4bfd; /* Changed color to a blue shade */
+}
+
+.center-text p {
+    font-size: 22px;
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    color: #888; /* Changed color to a light gray */
+}
+
+/* Original styling for the input container */
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    background-color: #13f182;
+    border: 2px solid lightgrey;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    margin-top: 30px;
+    transition: box-shadow 0.3s ease; /* Adding a transition for box-shadow changes */
+}
+
+/* Animation on hover */
+.input-container:hover {
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background:  #4b88fd;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #f7f6f6;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+
+
+
+
+.upload-btn {
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: #4b88fd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer; /* Added cursor pointer to indicate it's clickable */
+}
+
+.list-center-text {
+    color: #fff; /* Changed color to white */
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    background-color: rgb(44, 220, 94);
+    margin-top: 50px;
+    padding: 0px 0; /* Added padding for better spacing */
+}
+
+.list-center-text h2 {
+    padding: 5px;
+    font-size: 30px;
+}
+
+.no-file {
+    font-size: 22px;
+    color: steelblue;
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    margin-top: 30px; /* Adjusted top margin for spacing */
+}
+
+.file-details {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px; /* Adjusted top margin for spacing */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    max-width: 600px; /* Added max-width to avoid stretching on larger screens */
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.view-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #0000f1;
+}
+
+.delete-link {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Styles on hover */
+.upload-btn:hover {
+    transform: translateY(-1.5px);
+    box-shadow: 0px 2px 2px 1px rgba(75, 136, 253, 0.4);
+    cursor: pointer;
+}
+
+
